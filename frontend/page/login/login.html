@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./../pub.css">
+    <link rel="stylesheet" href="./login.css">
+    <title>登录 - 有间书屋</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <div class="name">有间书屋</div>
+            <div class="desc">在这里，享受阅读和生活</div>
+        </div>
+        <div class="panel">
+            <div id="login-panel" style="display: block;">
+                <div class="options">
+                    <span class="option chosen">登录</span>/
+                    <span class="option" onclick="switch_panel()">注册</span>
+                </div>
+                <div class="form">
+                    <input class="form-ele" type="text" placeholder="请输入用户名"/>
+                    <input class="form-ele" type="password" placeholder="请输入密码"/>
+                    <div class="btns">
+                        <div class="btn forget">忘记密码</div>
+                        <div class="btn login">登录</div>
+                    </div>
+                </div>
+            </div>
+            <div id="register-panel" style="display: none;">
+                <div class="options">
+                    <span class="option" onclick="switch_panel()">登录</span>/
+                    <span class="option chosen">注册</span>
+                </div>
+                <div class="form">
+                    <input class="form-ele" type="text" placeholder="请输入用户名"/>
+                    <input class="form-ele" type="password" placeholder="请输入密码"/>
+                    <div class="btns">
+                        <div class="btn register">现在注册</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="./../pub.js"></script>
+<script type="text/javascript" src="./login-ui.js"></script>
+<script type="module" src="./login.js"></script>
+
+</html>

@@ -1,0 +1,109 @@
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./../../resource/img/library-blur.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .logo{
+    color: #fff;
+    font-family: 'Source Han Sans CN Medium';
+    margin-right: 100px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+.wrapper .logo .name{
+    font-size: 65px;
+}
+
+.wrapper .logo .desc{
+    font-size: 25px;
+}
+
+.wrapper .panel{
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    background: #fff;
+    padding: 30px 40px 30px 40px;
+}
+
+.wrapper .panel .options{
+    font-size: 20px;
+    font-family: 'Source Han Sans CN Medium';
+}
+
+.wrapper .panel .option{
+    cursor: pointer;
+}
+
+.wrapper .panel .options .chosen{
+    font-size: 27px;
+    color: #df693a;
+}
+
+.wrapper .panel .form{
+    padding: 20px 0 0 0;
+}
+
+.wrapper .panel .form .form-ele:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.wrapper .panel input{
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    font-family: 'Source Han Sans CN Regular';
+    background: none;
+    outline: none;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+.wrapper .panel input::-webkit-input-placeholder {
+    color: #d1d1d1;
+    font-size: 15px;
+    font-family: 'Source Han Sans CN Regular';
+}
+
+.wrapper .panel .btns{
+    display: flex;
+
+}
+
+.wrapper .panel .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-family: 'Source Han Sans CN Medium';
+    font-size: 13px;
+    flex: 1;
+    height: 40px;
+}
+
+.wrapper .panel .btns .forget{
+    /* border: 2px #e1e1e1 solid; */
+    background: #d1d1d1;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.wrapper .panel .btns .login{
+    /* border: 2px #e1e1e1 solid; */
+    background: #df693a;
+    color: #fff;
+}
+
+.wrapper .panel .btns .register{
+    /* border: 2px #e1e1e1 solid; */
+    background: #df693a;
+    color: #fff;
+    flex: none;
+    width: 180px;
+}

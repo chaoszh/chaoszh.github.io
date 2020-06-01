@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>买本书吧 - 有间书屋</title>
+    <link rel="stylesheet" href="./../pub.css">
+    <link rel="stylesheet" href="./../components/footer.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <!-- 首页图片部分 -->
+    <div class="rect top">
+        <div class="menu-wrapper">
+            <div class="menu">
+                <div class="menu-item menu-item-a" onclick="goto('index')">首页</div>
+                <div class="menu-item menu-item-a login" onclick="goto('cart')">购物车</div>
+                <div class="menu-item menu-item-a login" onclick="goto('history')">订单</div>
+                <div style="flex:1;"></div>
+                <div class="menu-item menu-item-b logout" onclick="goto('login')">注册</div>
+                <div class="menu-item menu-item-b logout" onclick="goto('login')">登录</div>
+                <div class="menu-item menu-item-b login" onclick="logout()">登出</div>
+                <div class="menu-item" style="height: 30px; width: 30px; transform: translateY(-2px);">
+                    <embed src="./../../resource/icon/white/user.svg" type="image/svg+xml" />
+                </div>
+            </div>
+        </div>
+        <div class="title-wrapper">
+            <div class="title"> 有间书屋 </div>
+            <div class="description"> 在这里，享受阅读和生活 </div>
+        </div>
+    </div>
+    <!-- 首页商品信息 -->
+    <div class="rect mid">
+        <div class="menu">
+            <div class="menu-big-class">教育</div>
+            <div class="menu-small-class">教材</div>
+            <div class="menu-small-class">外语</div>
+            <div class="menu-small-class">考试</div>
+            <div class="menu-small-class">工具书</div>
+        </div>
+        <div class="books" id="jiaoyu">
+        </div>
+        <div class="menu">
+            <div class="menu-big-class">小说</div>
+            <div class="menu-small-class">情感</div>
+            <div class="menu-small-class">职场</div>
+            <div class="menu-small-class">科幻</div>
+            <div class="menu-small-class">推理</div>
+            <div class="menu-small-class">惊悚</div>
+            <div class="menu-small-class">社会</div>
+            <div class="menu-small-class">都市</div>
+            <div class="menu-small-class">乡土</div>
+            <div class="menu-small-class">财经</div>
+            <div class="menu-small-class">军事</div>
+        </div>
+        <div class="books" id="xiaoshuo">
+        </div>
+        <div class="menu">
+            <div class="menu-big-class">文艺</div>
+            <div class="menu-small-class">中国文学</div>
+            <div class="menu-small-class">外国文学</div>
+            <div class="menu-small-class">传记</div>
+            <div class="menu-small-class">艺术</div>
+            <div class="menu-small-class">摄影</div>
+        </div>
+        <div class="books" id="wenyi"></div>
+        <div class="menu">
+            <div class="menu-big-class">人文社科</div>
+            <div class="menu-small-class">历史</div>
+            <div class="menu-small-class">古籍</div>
+            <div class="menu-small-class">宗教</div>
+            <div class="menu-small-class">文化</div>
+            <div class="menu-small-class">法律</div>
+            <div class="menu-small-class">社会科学</div>
+            <div class="menu-small-class">心理学</div>
+        </div>
+        <div class="books" id="renwen"></div>
+        <div class="menu">
+            <div class="menu-big-class">童书</div>
+            <div class="menu-small-class">科普</div>
+            <div class="menu-small-class">百科</div>
+            <div class="menu-small-class">绘本</div>
+            <div class="menu-small-class">文学</div>
+            <div class="menu-small-class">英语</div>
+            <div class="menu-small-class">0-3岁</div>
+            <div class="menu-small-class">3-6岁</div>
+        </div>
+        <div class="books" id="tongshu"></div>
+    </div>
+    <footer>
+        <div>有间书屋 - Web系统与技术 - 个人作业</div>
+        <div>1751747 郑超</div>
+    </footer>
+</body>
+<script type="text/javascript" src="./../pub.js"></script>
+<script type="module" src="./index.js"></script>
+
+</html>

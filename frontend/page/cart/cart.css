@@ -1,0 +1,129 @@
+.cart .hints{
+    padding: 20px 0 15px 0;
+    background: #fefefe;
+    color: #888;
+    font-size: 13px;
+}
+
+.cart .hint:not(:first-child){
+    text-align: right;
+}
+
+.cart .items{
+    width: 1000px;
+    margin: auto;
+    padding: 20px 30px;
+    background: #fafafa;
+}
+
+.cart #empty{
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    vertical-align: middle;
+    color: #aaa;
+    font-size: 13px;
+}
+
+.cart .items .item{
+    display: flex;
+    margin-top: 20px;
+    color: #888;
+}
+
+.cart .items .checkboxs{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.cart .items .item .item-img{
+    height: 90px;
+    width: 90px;
+    background: #fff;
+    margin-right: 35px;
+}
+
+.cart .items .item .item-detail{
+    width: 350px;
+    /* border-right: 1px solid #ddd; */
+}
+
+.cart .items .item .item-detail .item-name{
+    font-size: 14px;
+    color: #333;
+}
+
+.cart .items .item .item-detail .item-author{
+    font-size: 13px;
+}
+
+.cart .items .item .item-sin-val::before,
+.cart .items .item .item-count::before{
+    content: '￥';
+}
+
+.cart .items .item .item-sin-val,
+.cart .items .item .item-num,
+.cart .items .item .item-count,
+.cart .items .item .options{
+    /* border: 1px solid black; */
+    flex: 1;
+    text-align: right;
+    font-size: 14px;
+}
+
+.cart .items .item .item-num .item-number{
+    width: 40px;
+    height: 20px;
+}
+
+.cart .items .item .options .delete-btn{
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: #ff2832;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.cart .counter{
+    margin: auto;
+    padding: 0 30px 0 30px;
+    width: 1000px;
+    height: 50px;
+    background: #f5f5f5;
+    border-top: 1px #ddd solid;
+
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+
+    color: #888;
+    font-size: 14px;
+}
+
+.cart .counter .money{
+    font-size: 18px;
+    color: #ff2832;
+    font-family: 'Source Han Sans CN Medium';
+}
+
+.cart .counter .money::before{
+    content: '￥';
+}
+
+.cart .counter .make-order-btn{
+    margin-left: 20px;
+    height: 35px;
+    width: 100px;
+    transform: translateX(10px);
+    background: #ff2832;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    line-height: 35px;
+}
